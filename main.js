@@ -1,60 +1,60 @@
 /********************
  * YOUR CODE BELOW! *
  ********************/
-function moreThan5 (num) {
-  return num > 5
+moreThan5 = (num) => {
+  return num > 5;
 }
 
-function isNewTopScore (score, topScore) {
-  return score > topScore
+isNewTopScore = (score, topScore) => {
+  return score > topScore;
 }
 
-function isInDanger (num) {
-  return num >= 60 && num <= 71
-}    
-
-function isCoasting (num) {
-  return num >=72 && num <=83;
+isInDanger = (grade) => {
+  return grade >= 60 && grade <= 71;
 }
 
-function isSucceeding (num) {
-  return num >= 84 && num <= 92; 
+isCoasting = (grade) => {
+  return grade >= 72 && grade <= 83;
 }
 
-function isFailing (num) {
-  return num < 60;
+isSucceeding = (grade) => {
+  return grade >= 84 && grade <= 92;
 }
 
-function isAcing (num) {
-  return num > 92;
+isFailing = (grade) => {
+  return grade < 60;
 }
 
-function isStudent (str) {
-  return str === "student";
+isAcing = (grade) => {
+  return grade > 92;
 }
 
-function isTeacher (str) {
-  return str === "teacher";
-} 
-
-function isAdmin (str) {
-  return str === "admin";
+isStudent = (str) => {
+  return str === 'student';
 }
 
-function isElementary (str) {
-  return str === "elementary";
+isTeacher = (str) => {
+  return str === 'teacher';
 }
 
-function areDifferentPeople (str1, str2) {
-  return str1 !== str2; 
+isAdmin = (str) => {
+  return str === 'admin';
 }
 
-function isMiddleSchoolTeacher (str, num) {
-  return str === "teacher" && num >= 6 && num <=8; 
+isElementary = (str) => {
+  return str === 'elementary';
 }
 
-function notAnElementarySchoolAdministrator (str1, str2) {
-  return str1 !== "elementary" || str2 !== "admin";
+areDifferentPeople = (personA, personB) => {
+  return personA !== personB;
+}
+
+isMiddleSchoolTeacher = (person, grade) => {
+  return person === 'teacher' && grade >= 6 && grade <= 8;
+}
+
+notAnElementarySchoolAdministrator = (member, role) => {
+  return member !== 'elementary' || role !== 'admin';
 }
 
 /********************************************************************************************
